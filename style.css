@@ -14,19 +14,25 @@ input {
 	border-radius: 1rem;
 	padding: 0.5rem;
 	padding-right: 1rem;
+	width: 100%;
+}
+
+.suggestions {
+	width: 100%;
 }
 
 ul {
 	padding: 0;
 	overflow-y: auto;
 	max-height: 200px;
+	position: absolute;
 }
 
 ul li {
 	list-style-type: none;
 	margin-top: 1rem;
 	padding: 0.5rem;
-	padding-right: 1rem;
+	padding-right: 10rem;
 }
 
 ul li:hover {
