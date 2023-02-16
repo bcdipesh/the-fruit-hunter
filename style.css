@@ -8,6 +8,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	background-image: linear-gradient(to right, #f5c61b, #e05800);
 }
 
 input {
