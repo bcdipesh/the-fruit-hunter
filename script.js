@@ -141,7 +141,15 @@ function showSuggestions(results, inputVal) {
 	// for each fruit that is matched create an li element and append it to the ul element
 	results.forEach((result) => {
 		const li = document.createElement('li');
-		li.innerText = result;
+
+		// find the matched substring and make it bold
+		const matchedSubStr = result.substring(
+			result.toLowerCase().indexOf(inputVal.toLowerCase()),
+			inputVal.length +
+				result.toLowerCase().indexOf(inputVal.toLowerCase())
+		);
+
+		li.innerHTML = result.replace(matchedSubStr, `<b>${matchedSubStr}</b>`);
 
 		suggestions.appendChild(li);
 	});
