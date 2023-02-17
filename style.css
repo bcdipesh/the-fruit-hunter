@@ -34,11 +34,28 @@ ul {
 	position: absolute;
 }
 
+ul::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+ul::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 1rem;
+}
+
+ul::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(to right, #f5c61b, #e05800);
+	border-radius: 1rem;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+	background: orangered;
+}
+
 ul li {
 	list-style-type: none;
 	padding: 0.5rem;
 	padding-right: 10rem;
-	background-color: none;
 }
 
 ul li:hover {
