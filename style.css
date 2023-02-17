@@ -16,6 +16,11 @@ input {
 	padding: 0.5rem;
 	padding-right: 1rem;
 	width: 100%;
+	background-image: linear-gradient(to right, #f5c61b, #e05800);
+}
+
+input:focus {
+	outline: none;
 }
 
 .suggestions {
@@ -31,13 +36,13 @@ ul {
 
 ul li {
 	list-style-type: none;
-	margin-top: 1rem;
 	padding: 0.5rem;
 	padding-right: 10rem;
+	background-color: none;
 }
 
 ul li:hover {
 	cursor: pointer;
-	background-color: lightgray;
+	background-color: orangered;
 	transition: 0.8s;
 }
